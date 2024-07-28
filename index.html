@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars 2017 Visualization</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Cars 2017 Visualization</h1>
+        <nav>
+            <button id="scene1">Average Highway MPG</button>
+            <button id="scene2">Average City MPG</button>
+            <button id="scene3">Engine Cylinders Distribution</button>
+        </nav>
+    </header>
+    <main>
+        <div id="visualization"></div>
+        <div id="tooltip" style="position: absolute; visibility: hidden; color: #fff; background-color: black; padding: 5px; border-radius: 5px; font-size: 12px;"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cars Data Visualization. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
