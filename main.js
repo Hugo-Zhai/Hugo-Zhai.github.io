@@ -21,8 +21,8 @@ d3.csv("cars2017.csv").then(csvData => {
     scene1();
 });
 
-// 场景1：展示各个汽车品牌的平均高速公路油耗
-function scene1() {
+// 场景3：展示各个汽车品牌的平均高速公路油耗
+function scene3() {
     svg.selectAll("*").remove();
     const groupedData = d3.group(data, d => d.make);
     const averageHighwayMPG = Array.from(groupedData, ([make, values]) => ({
@@ -300,8 +300,8 @@ svg.append("text")
  
 }
 
-// 场景3：展示汽车发动机气缸数的分布情况
-function scene3() {
+// 场景1：展示汽车发动机气缸数的分布情况
+function scene1() {
     svg.selectAll("*").remove();
     const margin = {top: 20, right: 20, bottom: 30, left: 40};  
     const width = +svg.attr("width") - margin.left - margin.right;  
