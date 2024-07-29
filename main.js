@@ -309,7 +309,6 @@ function scene1() {
     const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);  
 
 
-    // 假设 data 是你的数据  
     const x = d3.scaleLinear().range([0, width]).domain([0, 150]);  
     const y = d3.scaleLinear().range([height, 0]).domain([0, 150]);  
 
